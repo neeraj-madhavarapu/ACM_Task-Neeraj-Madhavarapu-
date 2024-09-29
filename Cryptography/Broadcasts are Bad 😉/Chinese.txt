@@ -1,0 +1,7 @@
+Reversing the string }d00g_0t_si_d4s4H{rcer gives:
+
+recr{H4s4d_is_t0_gooD}
+
+this is like a CTF flag formate :
+
+rec{Hashed_is_too_good}
