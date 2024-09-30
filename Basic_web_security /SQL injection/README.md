@@ -1,1 +1,8 @@
-hlo
+# SQL Injections
+
+I have learned how to find the vernalability in a website with a simple keyword ' and use another techniques to get access to the administrator account.
+I also used attacks on the web application to obtain the data type and data version from various data types like oracle,microsoft,mysql etc.
+The listing database content was the coolest and the part which i enjoyed a lot doing!!! 
+Also learned some Knowledge of how to use brup suite and retrive data.
+
+Enjoyed doing the tasks for ACM!!...<3
